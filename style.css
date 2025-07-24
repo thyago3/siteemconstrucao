@@ -1,0 +1,72 @@
+/* Zera margens e define fonte */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* fundo preto */
+  color: #F8F6F0; /* texto branco pérola */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Container central */
+.container {
+  display: flex;
+  flex-direction: column; /* empilhar verticalmente */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Marca principal */
+.brand {
+  font-size: 3rem;
+  margin: 0 0 40px 0;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #5C4033; /* marrom chique */
+}
+h1 {
+  color: #5C4033; /* marrom elegante */
+}
+h2 {
+  color: #5C4033;
+}
+a {
+  color: #5C4033;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Área do texto em construção */
+.construction {
+  display: flex;
+  flex-direction: column; /* cada palavra em uma coluna vertical */
+  gap: 10px;
+}
+
+/* Cada “coluna” vertical */
+.column {
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  border: 2px solid #5C4033; /* detalhe marrom */
+  border-radius: 12px;
+  background-color: rgba(92, 64, 51, 0.15); /* leve fundo marrom translúcido */
+  min-width: 220px;
+}
+
+/* Responsividade opcional */
+@media (max-width: 600px) {
+  .brand {
+    font-size: 2.2rem;
+  }
+  .column {
+    font-size: 1.4rem;
+    min-width: 180px;
+  }
+}
